@@ -1,0 +1,158 @@
+:root{
+    --color-principal: #525936;
+    --color-segundario: #3D4029;
+    --color_terciario: #26261C;
+    --tipo-letra: Verdana, Geneva, Tahoma, sans-serif;
+    --border-radius: 10px;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilos header */
+h1{
+    color: rgb(0, 0, 0);
+    /* margin: 20px;
+    padding: 20px; */
+}
+h1::before{
+    content: "⛑ ";
+}
+h1::after{
+    content: " ⛑";
+}
+header{
+    width: 100vw;
+    height: 20vh;
+    margin: 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-principal);
+}
+
+#avatar > img{
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+header > p{
+    float: right;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    margin: 10px;
+    background-color: var(--color_terciario);
+
+}
+nav>ul{
+    width: 50p;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav>ul>li>a:hover{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+nav>ul>li{
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: wheat;
+}
+
+section > p:first-child{
+    font-weight: bold;
+}
+main{
+    width: 100vw;
+    height: 60vh;
+    margin: 10px;
+    background-color: var(--color-segundario);
+
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    margin: 10px;
+    background-color: var(--color_terciario);
+}
+
+#hero > p{
+    font-size: 0.8 rem;
+}
+
+/* #hero{
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    width: 50vw;
+    height: 50vh;
+    background-color: #666;
+} */
+
+#hero > h1{
+    font-size: 2rem;
+}
+
+aside{
+    width: 30vw;
+    height: 60vh;
+    background-color: #fff;
+}
+
+section{
+    width: 70vw;
+    height: 30vh;
+    background-color: #555;
+}
+
+
+/* p{
+    color: blueviolet;
+}
+
+header{
+    background-color: yellow;
+}
+
+/* .verde{
+    color: green;
+    font-size: 36px;
+}
+
+.rojo{
+    color: red;
+    font-size: 45px;
+} */
+
+/* #avatar{
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(148, 226, 148);
+}
+
+article > p{
+    color: coral;
+}
+
+/* h1,p{
+    font-weight: 900;
+} */
+
+/* p:hover{
+    font-weight: 900;
+} */ 
