@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #caja {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    padding: 10px;}
+    </style>
+</head>
+<body>
+    <div class="box generalbox center clearfix">
+        <div class="no-overflow">
+        <p>Ya hemos observado que los resultados de emplear <i>inline-block</i> y <i>float </i>son similares cuando tratamos de construir la estructura de un sitio. ¿Pero cuál es más correcto?</p>
+        <p>Si indagamos un poco sobre las particularidades y diferencias de cada uno obtenemos que en general es más beneficioso emplear <i>inline-block</i> ya que <i>float </i>no ha sido diseñado para hacer esto, sino más bien para el clásico ejemplo en el que el texto flota alrededor de una imagen.</p>
+        <p>Aquí tenemos un artículo y un debate en el que se comenta el caso:</p>
+        <p><a href="http://25-horas.com/2014/08/20/por-una-web-mas-fluida-menos-float-y-mas-inline-block/" target="_blank" rel="noopener">Por una web más fluida: Menos "float" y más "inline-block"</a></p>
+        <p><a href="https://stackoverflow.com/questions/15172520/advantages-of-using-displayinline-block-vs-floatleft-in-css" target="_blank" rel="noopener">Advantages of using display:inline-block vs float:left in CSS</a></p>
+        <p>Una de las principales ventajas de <i>inline-block</i> es que podemos hacer uso de propiedades como <i>text-align</i> o <i>vertical-align</i>, sin embargo, <i>clear </i>dejará de surtir efecto.</p>
+        <p>También hemos tener en cuenta el margen derecho de 4 píxeles que se incluye en el elemento cuando le asignamos este <i>display</i>. Para corregirlo podemos darle un <i>margin </i>negativo de 4px:</p>
+        
+            <a class="autolink" title="Box-sizing" href="https://micursoonline.com/campus/mod/page/view.php?id=862">box-sizing</a>: border-box;
+        }
+        </div>
+        </div>
+</body>
+</html>
