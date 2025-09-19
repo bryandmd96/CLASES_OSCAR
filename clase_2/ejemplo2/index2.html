@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarjeta de Perfil</title>
+  <style>
+    :root {
+      --primary-color: #4f46e5;
+      --bg-color: #f3f4f6;
+      --text-color: #111827;
+      --spacing: 1rem;
+      --radius: 12px;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background-color: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: calc(var(--spacing) * 2);
+      width: 300px;
+      box-sizing: border-box; /* Modelo de caja activo */
+      text-align: center;
+    }
+
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: var(--spacing);
+    }
+
+    .profile-card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: var(--text-color);
+    }
+
+    .profile-card p {
+      color: #6b7280;
+      margin-top: 0.5rem;
+      margin-bottom: var(--spacing);
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #4338ca;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    /* Modelo de caja visual extra para aprendizaje */
+    .content-box {
+      margin: 1rem;
+      padding: 1rem;
+      border: 2px dashed #ddd;
+      background-color: #e0e7ff;
+      box-sizing: content-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img src="https://i.pravatar.cc/100" alt="Foto de perfil" />
+    <h2>María López</h2>
+    <p>Diseñadora UX • Amante del minimalismo</p>
+    <button class="btn">Seguir</button>
+
+    <div class="content-box">
+      <strong>Modelo de caja:</strong> content-box<br />
+      (Padding y border **no** incluidos en el ancho/alto)
+    </div>
+  </div>
+</body>
+</html>
